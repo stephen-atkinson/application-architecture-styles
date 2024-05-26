@@ -1,0 +1,9 @@
+-------- Order Invoice --------- 
+
+Order Id: 7
+
+Raspberry Jam x3 - £9.75
+
+Total Price: £9.75
+
+-------- Order Invoice --------- 

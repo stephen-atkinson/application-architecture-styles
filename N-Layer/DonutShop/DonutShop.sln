@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutShop.DAL", "DonutShop.DAL\DonutShop.DAL.csproj", "{F015A56F-82E3-4500-8861-AF721A69F26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutShop.BLL", "DonutShop.BLL\DonutShop.BLL.csproj", "{5F807A1F-B73B-4CA7-A7D6-90F0FEA25318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutShop.Web", "DonutShop.Web\DonutShop.Web.csproj", "{4C1DEA6E-0A5C-462C-9123-DFB5EB2C32A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutShop.Web.Api", "DonutShop.Web.Api\DonutShop.Web.Api.csproj", "{06A60DF2-A3FD-4997-8499-610A9D72C861}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F015A56F-82E3-4500-8861-AF721A69F26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F015A56F-82E3-4500-8861-AF721A69F26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F015A56F-82E3-4500-8861-AF721A69F26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F015A56F-82E3-4500-8861-AF721A69F26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F807A1F-B73B-4CA7-A7D6-90F0FEA25318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F807A1F-B73B-4CA7-A7D6-90F0FEA25318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F807A1F-B73B-4CA7-A7D6-90F0FEA25318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F807A1F-B73B-4CA7-A7D6-90F0FEA25318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1DEA6E-0A5C-462C-9123-DFB5EB2C32A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1DEA6E-0A5C-462C-9123-DFB5EB2C32A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1DEA6E-0A5C-462C-9123-DFB5EB2C32A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1DEA6E-0A5C-462C-9123-DFB5EB2C32A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A60DF2-A3FD-4997-8499-610A9D72C861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A60DF2-A3FD-4997-8499-610A9D72C861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A60DF2-A3FD-4997-8499-610A9D72C861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A60DF2-A3FD-4997-8499-610A9D72C861}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
