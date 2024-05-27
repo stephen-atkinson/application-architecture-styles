@@ -1,3 +1,4 @@
+using System.Net.Mail;
 using DonutShop.BLL.Contracts;
 using DonutShop.BLL.Models.Invoice;
 using DonutShop.DAL.Entities;
@@ -18,7 +19,7 @@ public class InvoiceService : IInvoiceService
     public Task CreateAsync(Order order, CancellationToken cancellationToken)
     {
         var invoice = _invoiceGenerator.Create(order);
-
+   
         return _fileService.CreateAsync(GetPath(order.Id), invoice, cancellationToken);
     }
 

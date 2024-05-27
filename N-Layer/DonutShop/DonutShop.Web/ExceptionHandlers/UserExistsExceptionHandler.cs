@@ -1,21 +1,22 @@
-using FluentValidation;
+using DonutShop.BLL.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DonutShop.Web.ExceptionHandlers;
 
-public class ValidationExceptionHandler : IExceptionHandler
+public class UserExistsExceptionHandler : IExceptionHandler
 {
     private readonly IProblemDetailsService _problemDetailsService;
 
-    public ValidationExceptionHandler(IProblemDetailsService problemDetailsService)
+    public UserExistsExceptionHandler(IProblemDetailsService problemDetailsService)
     {
         _problemDetailsService = problemDetailsService;
     }
-    
-    public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
+
+    public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception,
+        CancellationToken cancellationToken)
     {
-        if (exception is not ValidationException validationException)
+        if (exception is not UserExistsException userExistsException)
         {
             return false;
         }
@@ -27,12 +28,8 @@ public class ValidationExceptionHandler : IExceptionHandler
             ProblemDetails = new ProblemDetails
             {
                 Status = httpContext.Response.StatusCode = StatusCodes.Status400BadRequest,
-                Type = "ValidationFailure",
-                Title = "One or more validation errors occurred.",
-                Extensions = new Dictionary<string, object?>
-                {
-                    ["errors"] = validationException.Errors.ToDictionary(e => e.PropertyName, e => e.ErrorMessage)
-                }
+                Title = "User already exists.",
+                Detail = $"User with the username \"{userExistsException.Username}\" already exists"
             }
         };
 
