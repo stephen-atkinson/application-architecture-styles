@@ -1,0 +1,9 @@
+-------- Order Invoice --------- 
+
+Order Id: 1
+
+Custard x45 - £146.25
+
+Total Price: £146.25
+
+-------- Order Invoice --------- 
