@@ -1,7 +1,6 @@
-using DonutShop.Application.Models.Register;
 using FluentValidation;
 
-namespace DonutShop.Application.Validators;
+namespace DonutShop.Api.Features.Auth.Register;
 
 public class RegisterValidator : AbstractValidator<RegisterCommand>
 {

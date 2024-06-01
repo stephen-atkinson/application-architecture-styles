@@ -1,10 +1,10 @@
-using DonutShop.Application.Models.Login;
-using DonutShop.Application.Models.Register;
+using DonutShop.Api.Features.Auth.Login;
+using DonutShop.Api.Features.Auth.Register;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DonutShop.Api.Controllers;
+namespace DonutShop.Api.Features.Auth;
 
 [ApiController]
 [Route("[controller]")]

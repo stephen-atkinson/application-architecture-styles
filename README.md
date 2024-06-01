@@ -16,3 +16,8 @@
 
 - Add Migration - dotnet ef migrations add Initial --project DonutShop.Infrastructure --startup-project DonutShop.Api -o Database/Migrations
 - Create/Update Database - dotnet ef database update --project DonutShop.Infrastructure --startup-project DonutShop.Api
+- 
+#### Vertical Slice
+
+- Add Migration - dotnet ef migrations add Initial --project DonutShop.Api --startup-project DonutShop.Api -o Shared/Database/Migrations
+- Create/Update Database - dotnet ef database update --project DonutShop.Api --startup-project DonutShop.Api

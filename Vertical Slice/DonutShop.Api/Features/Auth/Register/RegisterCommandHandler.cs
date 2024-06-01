@@ -1,9 +1,7 @@
-using DonutShop.Application.Exceptions;
-using DonutShop.Application.Models.Register;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace DonutShop.Application.Commands;
+namespace DonutShop.Api.Features.Auth.Register;
 
 public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Unit>
 {

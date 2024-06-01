@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace DonutShop.Application.Models.SignUp;
+namespace DonutShop.Api.Features.Auth.Register;
 
 public class RegisterCommand : IRequest<Unit>
 {
