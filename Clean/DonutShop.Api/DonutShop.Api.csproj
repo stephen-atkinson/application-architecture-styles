@@ -28,6 +28,19 @@
       <None Remove="donutshop.db" />
       <None Remove="donutshop.db-shm" />
       <None Remove="donutshop.db-wal" />
+      <None Remove="Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Files\**" />
     </ItemGroup>
 
 </Project>
