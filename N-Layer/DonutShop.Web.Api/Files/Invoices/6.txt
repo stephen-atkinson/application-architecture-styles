@@ -1,9 +1,0 @@
--------- Order Invoice --------- 
-
-Order Id: 6
-
-Raspberry Jam x2 - £6.50
-
-Total Price: £6.50
-
--------- Order Invoice --------- 
