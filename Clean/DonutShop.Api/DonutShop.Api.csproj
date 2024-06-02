@@ -24,4 +24,10 @@
       <ProjectReference Include="..\DonutShop.Infrastructure\DonutShop.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="donutshop.db" />
+      <None Remove="donutshop.db-shm" />
+      <None Remove="donutshop.db-wal" />
+    </ItemGroup>
+
 </Project>
